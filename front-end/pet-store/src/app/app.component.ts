@@ -4,7 +4,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatListModule } from '@angular/material/list';
 import { RouterOutlet } from '@angular/router';
 import { Pet, PetStatus } from './models/pet.model';
-import { PetStoreService } from './src/app/services/pet-store.service';
+import { PetStoreService } from './services/pet-store.service';
 import { catchError, of } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
