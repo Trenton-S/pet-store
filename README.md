@@ -4,12 +4,14 @@ I wasn't sure if the front end should just talk directly to the PetStoreApi or u
 Currently it's pointed at `https://petstore.swagger.io` , but if you replace line in `src/app/services/pet-store.service.ts:12` with line 13, it will instead point to the local backend. 
 I used a CORS policy in the backend to make the endpoint functional.
 
-##backend 
+##backend
+
 `cd ./back-end/PetStoreApi`
 
 `dotnet run --launch-profile https`
 
 ##front-end
+
 I normally use WSL for angular dev work, so these are all linux-based commands:
 `cd ./front-end/pet-store`
 
