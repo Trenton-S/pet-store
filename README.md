@@ -16,9 +16,14 @@ I normally use WSL for angular dev work, so these are all linux-based commands:
 `cd ./front-end/pet-store`
 
 install latest node version (should be version 22)
+
 `nvm install --lts `
+
 `nvm use --lts`
 get node packages required to run app
+
 `npm i`
+
 run app
+
 `ng serve`
