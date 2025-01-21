@@ -1,0 +1,19 @@
+  <h1>Pet Store Listings</h1>
+
+  <mat-button-toggle-group multiple [(ngModel)]="statuses">
+    <mat-button-toggle value="available">Available</mat-button-toggle>
+    <mat-button-toggle value="pending">Pending</mat-button-toggle>
+    <mat-button-toggle value="sold">Sold</mat-button-toggle>
+  </mat-button-toggle-group>
+
+<mat-grid-list aria-label="pet-grid" cols="8" gutterSize="0.5rem" rowHeight="2:1">
+  @for (pet of pets.value(); track $index) {
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>{{pet.name}}</mat-card-title>
+      <mat-card-content>{{pet.status}}</mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  }
+  </mat-grid-list>
+
